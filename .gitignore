@@ -4,6 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
+/nestjs-cars-app/node_modules
+/nestjs-cars-app/dist
 
 # testing
 /coverage
