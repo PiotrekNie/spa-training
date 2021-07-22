@@ -7,8 +7,8 @@ import { Car } from './entities/car';
 export class CarsService {
   constructor(@InjectRepository(Car) private carRepository: Repository<Car>) {}
 
-  public async getAllCars(): Promise<Car[]> {
-    return await this.carRepository.find({}).catch((err) => {
+  public async getAllCar(): Promise<Car[]> {
+    return this.carRepository.find({}).catch((err) => {
       throw new InternalServerErrorException();
     });
   }
